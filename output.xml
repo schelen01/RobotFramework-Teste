@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.6 on win32)" generated="20220706 17:26:46.100" rpa="false" schemaversion="3">
+<suite id="s1" name="Schelen" source="C:\Users\Schel\Desktop\Meus Projetos GIT\RobotFramework\schelen.robot">
+<test id="s1-t1" name="Vira lata Caramelo" line="7">
+<kw name="Acessar o site" library="schelen">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 17:26:46.295" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 17:26:46.295" endtime="20220706 17:26:50.553"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 17:26:50.554" endtime="20220706 17:26:50.698"/>
+</kw>
+<status status="PASS" starttime="20220706 17:26:46.295" endtime="20220706 17:26:50.699"/>
+</kw>
+<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONCORDAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:26:50.701" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 17:26:50.700" endtime="20220706 17:26:50.837"/>
+</kw>
+<status status="PASS" starttime="20220706 17:26:50.699" endtime="20220706 17:26:50.838"/>
+</kw>
+<kw name="Pesquisar por &quot;Vira lata caramelo&quot; e selecionar a primeira opção da lista de resultados" library="schelen">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PESQUISAR}</arg>
+<arg>${TEXT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 17:26:50.843" level="INFO">Typing text 'Vira lata caramelo' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 17:26:50.842" endtime="20220706 17:26:51.797"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:26:54.803" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:26:51.797" endtime="20220706 17:26:54.803"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PEGAR_VIRALATA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:26:54.803" level="INFO">Clicking element 'xpath=//div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 17:26:54.803" endtime="20220706 17:26:56.861"/>
+</kw>
+<status status="PASS" starttime="20220706 17:26:50.842" endtime="20220706 17:26:56.861"/>
+</kw>
+<kw name="Validar se o valor do produto é &quot;R$ 69,99&quot;" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:26:59.870" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:26:56.862" endtime="20220706 17:26:59.870"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${VERIFICAR_VALOR}</arg>
+<arg>${PRECOCAMISA}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 17:26:59.907" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 17:26:59.871" endtime="20220706 17:26:59.907"/>
+</kw>
+<status status="PASS" starttime="20220706 17:26:56.862" endtime="20220706 17:26:59.907"/>
+</kw>
+<kw name="Selecionar um tamanho, cor e clicar em comprar" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECIONAR_TAMANHO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:26:59.908" level="INFO">Clicking element 'css=.cr-option:nth-child(4)'.</msg>
+<status status="PASS" starttime="20220706 17:26:59.908" endtime="20220706 17:26:59.965"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECIONAR_COR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:26:59.967" level="INFO">Clicking element 'xpath=//nav/div[1]/div'.</msg>
+<status status="PASS" starttime="20220706 17:26:59.965" endtime="20220706 17:27:00.041"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>NONE</arg>
+<arg>ARROW_DOWN</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220706 17:27:00.042" level="INFO">Sending key(s) ('ARROW_DOWN', 'ARROW_DOWN') to page.</msg>
+<msg timestamp="20220706 17:27:00.043" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220706 17:27:00.043" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<msg timestamp="20220706 17:27:00.051" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220706 17:27:00.051" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20220706 17:27:00.042" endtime="20220706 17:27:00.060"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:03.069" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:00.060" endtime="20220706 17:27:03.069"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAOCOMPRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:03.070" level="INFO">Clicking element 'xpath=//button/span[2]'.</msg>
+<status status="PASS" starttime="20220706 17:27:03.070" endtime="20220706 17:27:03.175"/>
+</kw>
+<status status="PASS" starttime="20220706 17:26:59.908" endtime="20220706 17:27:03.176"/>
+</kw>
+<kw name="Clicar em &quot;Ver sacola&quot;" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:06.200" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:03.178" endtime="20220706 17:27:06.200"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VERSACOLA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:06.200" level="INFO">Clicking element 'xpath=//div[2]/div/div[3]/a'.</msg>
+<status status="PASS" starttime="20220706 17:27:06.200" endtime="20220706 17:27:07.437"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:03.177" endtime="20220706 17:27:07.437"/>
+</kw>
+<kw name="Validar se a mensagem &quot;VOCÊ ESTÁ ACUMULANDO 1 PONTO NO CARTÃO FIDELIDADE!&quot; está sendo exibida" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:10.452" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:07.440" endtime="20220706 17:27:10.452"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${VERIFICARMENSAGEM}</arg>
+<arg>${TEXTMENSAGEM}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 17:27:10.488" level="INFO">Element 'css=#cart-loyalty &gt; .mx-0' contains text 'VOCÊ ESTÁ ACUMULANDO 1 PONTO NO CARTÃO FIDELIDADE!'.</msg>
+<status status="PASS" starttime="20220706 17:27:10.452" endtime="20220706 17:27:10.488"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:07.439" endtime="20220706 17:27:10.488"/>
+</kw>
+<kw name="Clicar em &quot;Fechar pedido&quot;" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:13.491" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:10.490" endtime="20220706 17:27:13.491"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FECHARPEDIDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:13.492" level="INFO">Clicking element 'xpath=//button[2]'.</msg>
+<status status="PASS" starttime="20220706 17:27:13.491" endtime="20220706 17:27:15.028"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:10.490" endtime="20220706 17:27:15.029"/>
+</kw>
+<kw name="Fechar browser" library="schelen">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220706 17:27:15.030" endtime="20220706 17:27:17.400"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:15.030" endtime="20220706 17:27:17.401"/>
+</kw>
+<status status="PASS" starttime="20220706 17:26:46.290" endtime="20220706 17:27:17.403"/>
+</test>
+<test id="s1-t2" name="Amarelo é Desespero" line="18">
+<kw name="Acessar o site 1" library="schelen">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_1}</arg>
+<arg>${NAVEGADOR_1}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 17:27:17.412" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 17:27:17.410" endtime="20220706 17:27:22.166"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 17:27:22.166" endtime="20220706 17:27:22.309"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:17.409" endtime="20220706 17:27:22.309"/>
+</kw>
+<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies 1" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONCORDARCOOKIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:22.313" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 17:27:22.312" endtime="20220706 17:27:22.424"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:22.310" endtime="20220706 17:27:22.426"/>
+</kw>
+<kw name="Pesquisar por &quot;Amarelo é desespero&quot; e selecionar a primeira opção da lista de resultados" library="schelen">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PESQUISAR1}</arg>
+<arg>${TEXT_AMARELO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:22.433" level="INFO">Typing text 'Amarelo é desespero' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 17:27:22.432" endtime="20220706 17:27:23.009"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:26.012" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:23.009" endtime="20220706 17:27:26.012"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PEGAR_AMARELO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:26.012" level="INFO">Clicking element 'xpath=//div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 17:27:26.012" endtime="20220706 17:27:28.234"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:22.431" endtime="20220706 17:27:28.235"/>
+</kw>
+<kw name="Validar se o valor do produto é &quot;R$ 69,99&quot; denovo" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:31.241" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:28.236" endtime="20220706 17:27:31.241"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${VERIFICAR_VALOR1}</arg>
+<arg>${PRECOCAMISA1}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 17:27:31.282" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 17:27:31.241" endtime="20220706 17:27:31.282"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:28.235" endtime="20220706 17:27:31.283"/>
+</kw>
+<kw name="Selecionar um tamanho, cor e clicar em comprar 1" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECIONARTAMANHO_P}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:31.285" level="INFO">Clicking element 'xpath=//div[3]/nav/div'.</msg>
+<status status="PASS" starttime="20220706 17:27:31.284" endtime="20220706 17:27:31.377"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECIONAR_AZUL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:31.378" level="INFO">Clicking element 'xpath=//nav/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 17:27:31.378" endtime="20220706 17:27:31.463"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>NONE</arg>
+<arg>ARROW_DOWN</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220706 17:27:31.464" level="INFO">Sending key(s) ('ARROW_DOWN', 'ARROW_DOWN') to page.</msg>
+<msg timestamp="20220706 17:27:31.465" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220706 17:27:31.465" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<msg timestamp="20220706 17:27:31.476" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220706 17:27:31.476" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20220706 17:27:31.464" endtime="20220706 17:27:31.482"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:34.490" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:31.482" endtime="20220706 17:27:34.490"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAOCOMPRAR1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:34.490" level="INFO">Clicking element 'xpath=//button/span[2]'.</msg>
+<status status="PASS" starttime="20220706 17:27:34.490" endtime="20220706 17:27:34.611"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:31.283" endtime="20220706 17:27:34.612"/>
+</kw>
+<kw name="Clicar em &quot;Ver sacola&quot; 1" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:37.615" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:34.614" endtime="20220706 17:27:37.616"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VERSACOLA1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:37.617" level="INFO">Clicking element 'xpath=//div[2]/div/div[3]/a'.</msg>
+<status status="PASS" starttime="20220706 17:27:37.616" endtime="20220706 17:27:38.516"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:34.612" endtime="20220706 17:27:38.517"/>
+</kw>
+<kw name="Validar se a mensagem &quot;A cada 10 produtos, você acumula R$50 para usar como quiser.&quot; está sendo exibida" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:41.520" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:38.519" endtime="20220706 17:27:41.520"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${VERIFICARMENSAGEM1}</arg>
+<arg>${TEXTMENSAGEM_2}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220706 17:27:42.063" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-104.png"&gt;&lt;img src="selenium-screenshot-104.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220706 17:27:42.064" level="FAIL">Invalid log level 'A CADA 10 PRODUTOS, VOCÊ ACUMULA R$50 PARA USAR COMO QUISER.'.</msg>
+<status status="FAIL" starttime="20220706 17:27:41.520" endtime="20220706 17:27:42.069"/>
+</kw>
+<status status="FAIL" starttime="20220706 17:27:38.518" endtime="20220706 17:27:42.070"/>
+</kw>
+<kw name="Clicar em &quot;Fechar pedido&quot; 1" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:27:42.071" endtime="20220706 17:27:42.071"/>
+</kw>
+<kw name="Fechar browser 1" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:27:42.071" endtime="20220706 17:27:42.071"/>
+</kw>
+<status status="FAIL" starttime="20220706 17:27:17.406" endtime="20220706 17:27:42.074">Invalid log level 'A CADA 10 PRODUTOS, VOCÊ ACUMULA R$50 PARA USAR COMO QUISER.'.</status>
+</test>
+<test id="s1-t3" name="Erarr é humano" line="29">
+<kw name="Acessar o site 2" library="schelen">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE2}</arg>
+<arg>${NAVEGADOR2}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 17:27:42.079" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 17:27:42.077" endtime="20220706 17:27:46.698"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 17:27:46.698" endtime="20220706 17:27:46.844"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:42.077" endtime="20220706 17:27:46.844"/>
+</kw>
+<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies 2" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONCORDAR2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:46.847" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 17:27:46.846" endtime="20220706 17:27:47.036"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:46.845" endtime="20220706 17:27:47.036"/>
+</kw>
+<kw name="Pesquisar por &quot;Erarr&quot; e selecionar a primeira opção da lista de resultados" library="schelen">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PESQUISAR2}</arg>
+<arg>${TEXT_ER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:47.042" level="INFO">Typing text 'Erarr' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 17:27:47.040" endtime="20220706 17:27:47.489"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:50.494" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:47.489" endtime="20220706 17:27:50.494"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PEGAR_ERARR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:50.494" level="INFO">Clicking element 'xpath=//div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 17:27:50.494" endtime="20220706 17:27:52.950"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:47.038" endtime="20220706 17:27:52.952"/>
+</kw>
+<kw name="Validar se o valor do produto é &quot;R$ 69,99&quot; again" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:55.963" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:52.953" endtime="20220706 17:27:55.963"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${VERIFICAR_VALOR2}</arg>
+<arg>${PRECOCAMISA2}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 17:27:55.996" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 17:27:55.963" endtime="20220706 17:27:55.996"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:52.953" endtime="20220706 17:27:55.996"/>
+</kw>
+<kw name="Selecionar um tamanho, cor e clicar em comprar 2" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECIONARTAMANHO2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:55.997" level="INFO">Clicking element 'xpath=//div[3]/nav/div'.</msg>
+<status status="PASS" starttime="20220706 17:27:55.997" endtime="20220706 17:27:56.064"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECIONAR_COR2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:56.065" level="INFO">Clicking element 'xpath=//nav/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 17:27:56.065" endtime="20220706 17:27:56.151"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>NONE</arg>
+<arg>ARROW_DOWN</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220706 17:27:56.151" level="INFO">Sending key(s) ('ARROW_DOWN', 'ARROW_DOWN') to page.</msg>
+<msg timestamp="20220706 17:27:56.151" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220706 17:27:56.151" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<msg timestamp="20220706 17:27:56.165" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220706 17:27:56.165" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20220706 17:27:56.151" endtime="20220706 17:27:56.170"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:27:59.183" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:56.170" endtime="20220706 17:27:59.183"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAOCOMPRAR2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:27:59.183" level="INFO">Clicking element 'xpath=//button/span[2]'.</msg>
+<status status="PASS" starttime="20220706 17:27:59.183" endtime="20220706 17:27:59.320"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:55.997" endtime="20220706 17:27:59.320"/>
+</kw>
+<kw name="Clicar em &quot;Ver sacola&quot; 2" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:28:02.333" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:27:59.322" endtime="20220706 17:28:02.333"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VERSACOLA2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:02.334" level="INFO">Clicking element 'xpath=//div[2]/div/div[3]/a'.</msg>
+<status status="PASS" starttime="20220706 17:28:02.333" endtime="20220706 17:28:03.271"/>
+</kw>
+<status status="PASS" starttime="20220706 17:27:59.322" endtime="20220706 17:28:03.272"/>
+</kw>
+<kw name="Validar se a mensagem &quot;De segunda a sexta, das 8h às 18h.&quot; está sendo exibida" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:28:06.285" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:28:03.274" endtime="20220706 17:28:06.285"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${VERIFICARMENSAGEM2}</arg>
+<arg>${TEXTMENSAGEM_3}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220706 17:28:06.784" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-105.png"&gt;&lt;img src="selenium-screenshot-105.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220706 17:28:06.784" level="FAIL">Invalid log level 'DE SEGUNDA A SEXTA, DAS 8H ÀS 18H.'.</msg>
+<status status="FAIL" starttime="20220706 17:28:06.285" endtime="20220706 17:28:06.785"/>
+</kw>
+<status status="FAIL" starttime="20220706 17:28:03.273" endtime="20220706 17:28:06.785"/>
+</kw>
+<kw name="Clicar em &quot;Fechar pedido&quot; 2" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:06.786" endtime="20220706 17:28:06.786"/>
+</kw>
+<kw name="Fechar browser 2" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:06.787" endtime="20220706 17:28:06.787"/>
+</kw>
+<status status="FAIL" starttime="20220706 17:27:42.076" endtime="20220706 17:28:06.788">Invalid log level 'DE SEGUNDA A SEXTA, DAS 8H ÀS 18H.'.</status>
+</test>
+<test id="s1-t4" name="Nem Te Vi" line="40">
+<kw name="Acessar o site 3" library="schelen">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE3}</arg>
+<arg>${NAVEGADOR3}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 17:28:06.792" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 17:28:06.792" endtime="20220706 17:28:11.874"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 17:28:11.874" endtime="20220706 17:28:12.084"/>
+</kw>
+<status status="PASS" starttime="20220706 17:28:06.792" endtime="20220706 17:28:12.084"/>
+</kw>
+<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies 3" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONCORDAR3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:12.087" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 17:28:12.087" endtime="20220706 17:28:12.620"/>
+</kw>
+<status status="PASS" starttime="20220706 17:28:12.085" endtime="20220706 17:28:12.620"/>
+</kw>
+<kw name="Pesquisar por &quot;Nem Te Vi&quot; e selecionar a primeira opção da lista de resultados" library="schelen">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PESQUISAR3}</arg>
+<arg>${TEXT_NEMTEVI}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:12.624" level="INFO">Typing text 'nem te vi' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 17:28:12.623" endtime="20220706 17:28:12.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:28:15.851" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:28:12.842" endtime="20220706 17:28:15.851"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PEGAR_NEMTEVI}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:15.852" level="INFO">Clicking element 'xpath=//div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220706 17:28:15.851" endtime="20220706 17:28:18.027"/>
+</kw>
+<status status="PASS" starttime="20220706 17:28:12.622" endtime="20220706 17:28:18.027"/>
+</kw>
+<kw name="Validar se o valor do produto é &quot;R$ 69,99&quot; again outra vez" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:28:21.042" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:28:18.029" endtime="20220706 17:28:21.042"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${VERIFICAR_VALOR3}</arg>
+<arg>${PRECOCAMISA3}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220706 17:28:21.080" level="INFO">Element 'css=.text-yanone &gt; .d-inline-flex' contains text 'R$ 69,99'.</msg>
+<status status="PASS" starttime="20220706 17:28:21.042" endtime="20220706 17:28:21.080"/>
+</kw>
+<status status="PASS" starttime="20220706 17:28:18.028" endtime="20220706 17:28:21.080"/>
+</kw>
+<kw name="Selecionar um tamanho, cor e clicar em comprar 3" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECIONARTAMANHO3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:21.082" level="INFO">Clicking element 'css=.cr-option:nth-child(4)'.</msg>
+<status status="PASS" starttime="20220706 17:28:21.082" endtime="20220706 17:28:21.165"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SELECIONAR_COR3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:21.167" level="INFO">Clicking element 'css=.cr-option:nth-child(2) &gt; .product-color-option'.</msg>
+<status status="PASS" starttime="20220706 17:28:21.165" endtime="20220706 17:28:21.235"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>NONE</arg>
+<arg>ARROW_DOWN</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220706 17:28:21.236" level="INFO">Sending key(s) ('ARROW_DOWN', 'ARROW_DOWN') to page.</msg>
+<msg timestamp="20220706 17:28:21.236" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220706 17:28:21.236" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<msg timestamp="20220706 17:28:21.246" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220706 17:28:21.246" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20220706 17:28:21.235" endtime="20220706 17:28:21.251"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:28:24.265" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:28:21.251" endtime="20220706 17:28:24.266"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAOCOMPRAR3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:24.267" level="INFO">Clicking element 'xpath=//button/span[2]'.</msg>
+<status status="PASS" starttime="20220706 17:28:24.266" endtime="20220706 17:28:24.381"/>
+</kw>
+<status status="PASS" starttime="20220706 17:28:21.081" endtime="20220706 17:28:24.382"/>
+</kw>
+<kw name="Clicar em &quot;Ver sacola&quot; 3" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:28:27.385" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:28:24.383" endtime="20220706 17:28:27.385"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VERSACOLA3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:27.385" level="INFO">Clicking element 'xpath=//div[2]/div/div[3]/a'.</msg>
+<status status="PASS" starttime="20220706 17:28:27.385" endtime="20220706 17:28:28.330"/>
+</kw>
+<status status="PASS" starttime="20220706 17:28:24.383" endtime="20220706 17:28:28.330"/>
+</kw>
+<kw name="Validar se a mensagem &quot;Compre parcelado com cartão ou a vista com boleto ou depósito&quot; está sendo exibida" library="schelen">
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:28:31.338" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:28:28.331" endtime="20220706 17:28:31.338"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${VERIFICARMENSAGEM3}</arg>
+<arg>${TEXTMENSAGEM_4}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220706 17:28:31.851" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-106.png"&gt;&lt;img src="selenium-screenshot-106.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220706 17:28:31.851" level="FAIL">Invalid log level 'COMPRE PARCELADO COM CARTÃO OU A VISTA COM BOLETO OU DEPÓSITO'.</msg>
+<status status="FAIL" starttime="20220706 17:28:31.338" endtime="20220706 17:28:31.852"/>
+</kw>
+<status status="FAIL" starttime="20220706 17:28:28.330" endtime="20220706 17:28:31.852"/>
+</kw>
+<kw name="Clicar em &quot;Fechar pedido&quot; 3" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:31.854" endtime="20220706 17:28:31.854"/>
+</kw>
+<kw name="Fechar browser 3" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:31.855" endtime="20220706 17:28:31.855"/>
+</kw>
+<status status="FAIL" starttime="20220706 17:28:06.790" endtime="20220706 17:28:31.857">Invalid log level 'COMPRE PARCELADO COM CARTÃO OU A VISTA COM BOLETO OU DEPÓSITO'.</status>
+</test>
+<test id="s1-t5" name="Alceu Dispor" line="51">
+<kw name="Acessar o site 4" library="schelen">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE4}</arg>
+<arg>${NAVEGADOR4}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 17:28:31.861" level="INFO">Opening browser 'Chrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220706 17:28:31.861" endtime="20220706 17:28:36.950"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 17:28:36.950" endtime="20220706 17:28:37.137"/>
+</kw>
+<status status="PASS" starttime="20220706 17:28:31.860" endtime="20220706 17:28:37.137"/>
+</kw>
+<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies 4" library="schelen">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONCORDAR4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:37.153" level="INFO">Clicking element 'id=confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 17:28:37.151" endtime="20220706 17:28:37.795"/>
+</kw>
+<status status="PASS" starttime="20220706 17:28:37.150" endtime="20220706 17:28:37.795"/>
+</kw>
+<kw name="Pesquisar por &quot;Alceu Dispor&quot; e selecionar a primeira opção da lista de resultados" library="schelen">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PESQUISAR4}</arg>
+<arg>${TEXT_ALCEU}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:37.808" level="INFO">Typing text 'Alceu Dispor' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 17:28:37.808" endtime="20220706 17:28:38.053"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${SLEEP}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220706 17:28:41.067" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220706 17:28:38.054" endtime="20220706 17:28:41.068"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PEGAR_ALCEU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 17:28:41.069" level="INFO">Clicking element 'xpath=//div/div/div[2]/div'.</msg>
+<msg timestamp="20220706 17:28:43.735" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-107.png"&gt;&lt;img src="selenium-screenshot-107.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220706 17:28:43.735" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00936463+2188387]
+	Ordinal0 [0x008CE461+1762401]
+	Ordinal0 [0x007E3D78+802168]
+	Ordinal0 [0x007D7210+750096]
+	Ordinal0 [0x007D675A+747354]
+	Ordinal0 [0x007D5D3F+744767]
+	Ordinal0 [0x007D4C28+740392]
+	Ordinal0 [0x007D5228+741928]
+	Ordinal0 [0x007DF153+782675]
+	Ordinal0 [0x007E9FBB+827323]
+	Ordinal0 [0x007ED310+840464]
+	Ordinal0 [0x007D54F6+742646]
+	Ordinal0 [0x007E9BF3+826355]
+	Ordinal0 [0x0083CF6D+1167213]
+	Ordinal0 [0x0082C5F6+1099254]
+	Ordinal0 [0x00806BE0+945120]
+	Ordinal0 [0x00807AD6+948950]
+	GetHandleVerifier [0x00BD71F2+2712546]
+	GetHandleVerifier [0x00BC886D+2652765]
+	GetHandleVerifier [0x009C002A+520730]
+	GetHandleVerifier [0x009BEE06+516086]
+	Ordinal0 [0x008D468B+1787531]
+	Ordinal0 [0x008D8E88+1805960]
+	Ordinal0 [0x008D8F75+1806197]
+	Ordinal0 [0x008E1DF1+1842673]
+	BaseThreadInitThunk [0x76A66739+25]
+	RtlGetFullPathName_UEx [0x77A28FEF+1215]
+	RtlGetFullPathName_UEx [0x77A28FBD+1165]
+</msg>
+<status status="FAIL" starttime="20220706 17:28:41.068" endtime="20220706 17:28:43.741"/>
+</kw>
+<status status="FAIL" starttime="20220706 17:28:37.807" endtime="20220706 17:28:43.741"/>
+</kw>
+<kw name="Validar se o valor do produto é &quot;R$ 69,99&quot; vamos lá" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:43.742" endtime="20220706 17:28:43.742"/>
+</kw>
+<kw name="Selecionar um tamanho, cor e clicar em comprar 4" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:43.742" endtime="20220706 17:28:43.742"/>
+</kw>
+<kw name="Clicar em &quot;Ver sacola&quot; 4" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:43.743" endtime="20220706 17:28:43.743"/>
+</kw>
+<kw name="Validar se a mensagem &quot;Sua primeira troca na Chico Rei é por nossa conta!&quot; está sendo exibida" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:43.743" endtime="20220706 17:28:43.743"/>
+</kw>
+<kw name="Clicar em &quot;Fechar pedido&quot; 4" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:43.744" endtime="20220706 17:28:43.744"/>
+</kw>
+<kw name="Fechar browser 4" library="schelen">
+<status status="NOT RUN" starttime="20220706 17:28:43.744" endtime="20220706 17:28:43.744"/>
+</kw>
+<status status="FAIL" starttime="20220706 17:28:31.859" endtime="20220706 17:28:43.744">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00936463+2188387]
+	Ordinal0 [0x008CE461+1762401]
+	Ordinal0 [0x007E3D78+802168]
+	Ordinal0 [0x007D7210+750096]
+	Ordinal0 [0x007D675A+747354]
+	Ordinal0 [0x007D5D3F+744767]
+	Ordinal0 [0x007D4C28+740392]
+	Ordinal0 [0x007D5228+741928]
+	Ordinal0 [0x007DF153+782675]
+	Ordinal0 [0x007E9FBB+827323]
+	Ordinal0 [0x007ED310+840464]
+	Ordinal0 [0x007D54F6+742646]
+	Ordinal0 [0x007E9BF3+826355]
+	Ordinal0 [0x0083CF6D+1167213]
+	Ordinal0 [0x0082C5F6+1099254]
+	Ordinal0 [0x00806BE0+945120]
+	Ordinal0 [0x00807AD6+948950]
+	GetHandleVerifier [0x00BD71F2+2712546]
+	GetHandleVerifier [0x00BC886D+2652765]
+	GetHandleVerifier [0x009C002A+520730]
+	GetHandleVerifier [0x009BEE06+516086]
+	Ordinal0 [0x008D468B+1787531]
+	Ordinal0 [0x008D8E88+1805960]
+	Ordinal0 [0x008D8F75+1806197]
+	Ordinal0 [0x008E1DF1+1842673]
+	BaseThreadInitThunk [0x76A66739+25]
+	RtlGetFullPathName_UEx [0x77A28FEF+1215]
+	RtlGetFullPathName_UEx [0x77A28FBD+1165]
+</status>
+</test>
+<status status="FAIL" starttime="20220706 17:26:46.103" endtime="20220706 17:28:43.751"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="4" skip="0" id="s1" name="Schelen">Schelen</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
